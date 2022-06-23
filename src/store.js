@@ -1,6 +1,6 @@
 function Store(initState) {
-	var observers = new Map();
-	var state = { ...initState };
+	const observers = new Map();
+	let state = { ...initState };
 
 	function next(nextState) {
 		const newState = {
